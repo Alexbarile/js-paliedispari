@@ -27,7 +27,7 @@ let sommaTot = somma(numero_utente, numero_computer);
 // definiamo se la somma è PARI o DISPARI
 
 function pariDispari(pari, dispari){
-    if(sommaTot == pari_Dispari){
+    if(sommaTot % 2 == 0){
         alert('Utente Vince')
     }
     else{
