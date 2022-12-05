@@ -1,4 +1,4 @@
-let pariDispari = prompt('Pari o Dispari');
+let pari_Dispari = prompt('Pari o Dispari');
 let numero_utente = parseInt(prompt('Inserisci un numero da 1 a 5'));
 console.log(numero_utente)
 
@@ -22,4 +22,17 @@ function somma(numero_utente, numero_computer){
 
 }
 
-somma(numero_utente, numero_computer);
+let sommaTot = somma(numero_utente, numero_computer);
+
+// definiamo se la somma è PARI o DISPARI
+
+function pariDispari(pari, dispari){
+    if(sommaTot == pari_Dispari){
+        alert('Utente Vince')
+    }
+    else{
+        alert('Computer VInce')
+    }
+}
+
+pariDispari(sommaTot, pari_Dispari)
