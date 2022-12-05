@@ -1,9 +1,10 @@
-let parola = prompt('Inserisci una parola');
 
 function palindroma(par){
     let parInversa = par.split('').reverse().join('');
     return parInversa;
 }
+
+let parola = prompt('Inserisci una parola');
 
 let parolaInversa = palindroma(parola);
 
