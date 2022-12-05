@@ -26,13 +26,26 @@ let sommaTot = somma(numero_utente, numero_computer);
 
 // definiamo se la somma è PARI o DISPARI
 
-function pariDispari(pari, dispari){
-    if(sommaTot % 2 == 0){
-        alert('Utente Vince')
+function pariDispari(numero){
+    if(numero % 2 == 0){
+        return true;
+        // alert('Utente Vince')
     }
     else{
-        alert('Computer VInce')
+        return false;
+        // alert('Computer VInce')
     }
 }
 
-pariDispari(sommaTot, pari_Dispari)
+let numero = pari_Dispari;
+let result = pariDispari(numero);
+
+if(result === true){
+    alert('numero pari')
+}
+else{
+    alert('numero dispari')
+}
+
+// pariDispari(sommaTot, pari_Dispari)
+
