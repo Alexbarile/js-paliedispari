@@ -1,5 +1,5 @@
 let pari_Dispari = prompt('Pari o Dispari');
-let numero_utente = parseInt(prompt('Inserisci un numero da 1 a 5'));
+let numero_utente = parseInt(prompt('Inserisci un numero tra 1 e 5'));
 console.log(numero_utente)
 
 // genero numero randomico per computer
@@ -9,43 +9,43 @@ function generateNumRandom(min, max){
     return randomNumber;
 }
 
-let numero_computer = generateNumRandom(1, 5);
+let numero_pc = generateNumRandom(1, 5);
 
-console.log(numero_computer)
+console.log(numero_pc)
 
 // faccio somma numero utente + numero computer
 
-function somma(numero_utente, numero_computer){
-    let sommaTot = numero_utente + numero_computer
-    console.log(sommaTot)
-    return sommaTot;
+// function somma(numero_utente, numero_pc){
+//     let sommaTot = numero_utente + numero_pc
+//     console.log(sommaTot)
+//     return sommaTot;
 
-}
+// }
 
-let sommaTot = somma(numero_utente, numero_computer);
+let sommaTot = numero_utente + numero_pc; 
+console.log(sommaTot);
 
 // definiamo se la somma è PARI o DISPARI
 
-function pariDispari(numero){
-    if(numero % 2 == 0){
-        return true;
-        // alert('Utente Vince')
+function pariDispari(sommaTot){
+    if(sommaTot % 2 == 0){
+        return "pari";
+    
     }
     else{
-        return false;
-        // alert('Computer VInce')
+        return "dispari";
+       
     }
 }
 
-let numero = pari_Dispari;
-let result = pariDispari(numero);
+let result = pariDispari(sommaTot);
 
-if(result === true){
-    alert('numero pari')
+if(pari_Dispari == result){
+    alert('hai vinto')
 }
 else{
-    alert('numero dispari')
+    alert('hai perso')
 }
 
-// pariDispari(sommaTot, pari_Dispari)
+
 
